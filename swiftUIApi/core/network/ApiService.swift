@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ApiService {
+class ApiService: ApiServiceProtocol {
     func receiveDataFromApi<T:Codable>(fromUrl: String) async -> T? {
         do {
             //Verify if is a valid url
