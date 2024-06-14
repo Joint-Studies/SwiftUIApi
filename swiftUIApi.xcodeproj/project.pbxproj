@@ -11,6 +11,10 @@
 		17EA634D2C1CA86300F181E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA634C2C1CA86300F181E6 /* ContentView.swift */; };
 		17EA634F2C1CA86500F181E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EA634E2C1CA86500F181E6 /* Assets.xcassets */; };
 		17EA63522C1CA86500F181E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EA63512C1CA86500F181E6 /* Preview Assets.xcassets */; };
+		17EA635A2C1CA8EA00F181E6 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA63592C1CA8EA00F181E6 /* NetworkErrors.swift */; };
+		17EA635D2C1CA92000F181E6 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA635C2C1CA92000F181E6 /* ApiService.swift */; };
+		17EA63602C1CAC0500F181E6 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA635F2C1CAC0500F181E6 /* PostModel.swift */; };
+		17EA63632C1CAD1F00F181E6 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA63622C1CAD1F00F181E6 /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		17EA634C2C1CA86300F181E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		17EA634E2C1CA86500F181E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17EA63512C1CA86500F181E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17EA63592C1CA8EA00F181E6 /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		17EA635C2C1CA92000F181E6 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		17EA635F2C1CAC0500F181E6 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		17EA63622C1CAD1F00F181E6 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		17EA63492C1CA86300F181E6 /* swiftUIApi */ = {
 			isa = PBXGroup;
 			children = (
+				17EA63612C1CAD0B00F181E6 /* viewModel */,
+				17EA635E2C1CABF400F181E6 /* models */,
+				17EA63582C1CA8BF00F181E6 /* core */,
 				17EA634A2C1CA86300F181E6 /* swiftUIApiApp.swift */,
 				17EA634C2C1CA86300F181E6 /* ContentView.swift */,
 				17EA634E2C1CA86500F181E6 /* Assets.xcassets */,
@@ -65,6 +76,39 @@
 				17EA63512C1CA86500F181E6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17EA63582C1CA8BF00F181E6 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				17EA635B2C1CA90700F181E6 /* network */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		17EA635B2C1CA90700F181E6 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				17EA63592C1CA8EA00F181E6 /* NetworkErrors.swift */,
+				17EA635C2C1CA92000F181E6 /* ApiService.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		17EA635E2C1CABF400F181E6 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				17EA635F2C1CAC0500F181E6 /* PostModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		17EA63612C1CAD0B00F181E6 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17EA63622C1CAD1F00F181E6 /* PostViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EA63632C1CAD1F00F181E6 /* PostViewModel.swift in Sources */,
 				17EA634D2C1CA86300F181E6 /* ContentView.swift in Sources */,
+				17EA63602C1CAC0500F181E6 /* PostModel.swift in Sources */,
 				17EA634B2C1CA86300F181E6 /* swiftUIApiApp.swift in Sources */,
+				17EA635D2C1CA92000F181E6 /* ApiService.swift in Sources */,
+				17EA635A2C1CA8EA00F181E6 /* NetworkErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

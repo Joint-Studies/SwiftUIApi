@@ -8,14 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var postVM = PostViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        List(postVM.postData){ post in
+            HStack{
+                Text("\(post.userId)")
+                    .padding()
+                    .overlay(Circle().stroke(.blue))
+                VStack(
+                    alignment: .leading,
+                    content: {
+                    Text(post.title)
+                        .bold()
+                        .lineLimit(1)
+                    
+                    Text(post.body)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .lineLimit(2)
+                })
+            }
         }
-        .padding()
+        .onAppear{
+            if postVM.postData.isEmpty {
+                Task {
+                    await postVM.fetchData()
+                }
+            }
+        }
     }
 }
 
