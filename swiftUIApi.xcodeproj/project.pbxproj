@@ -27,6 +27,8 @@
 		3BB1246D43E25A1EAB08768A /* Pods_swiftUIApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185ED0D5E66E380629C62A9A /* Pods_swiftUIApi.framework */; };
 		54BD999788BA0B5CC40F5390 /* Pods_swiftUIApiUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7037A3FB1D31E97E3E5A7AEF /* Pods_swiftUIApiUnitTests.framework */; };
 		B0CC097B6D41CE9B496D4709 /* Pods_swiftUIApi_swiftUIApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F7314F173F33423BA0D8A4 /* Pods_swiftUIApi_swiftUIApiTests.framework */; };
+		F68AAE092C1D054E002DDAD2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA635C2C1CA92000F181E6 /* ApiService.swift */; };
+		F68AAE0A2C1D0569002DDAD2 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA63592C1CA8EA00F181E6 /* NetworkErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -497,6 +499,8 @@
 				17EA63C82C1CBF3900F181E6 /* MockApiService.swift in Sources */,
 				17EA63CB2C1CBFFB00F181E6 /* PostModel.swift in Sources */,
 				17EA63BD2C1CBCAE00F181E6 /* swiftUIApiUnitTests.swift in Sources */,
+				F68AAE0A2C1D0569002DDAD2 /* NetworkErrors.swift in Sources */,
+				F68AAE092C1D054E002DDAD2 /* ApiService.swift in Sources */,
 				17EA63C92C1CBF5900F181E6 /* ApiServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,7 +558,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -617,7 +621,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -647,6 +651,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIApi/Preview Content\"";
 				DEVELOPMENT_TEAM = 2NFD5PY7N5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -677,6 +682,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"swiftUIApi/Preview Content\"";
 				DEVELOPMENT_TEAM = 2NFD5PY7N5;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -703,6 +709,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2NFD5PY7N5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigocode.swiftUIApiTests;
@@ -721,6 +728,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2NFD5PY7N5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigocode.swiftUIApiTests;
@@ -740,6 +748,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2NFD5PY7N5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigocode.swiftUIApiUnitTests;
@@ -759,6 +768,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2NFD5PY7N5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigocode.swiftUIApiUnitTests;
