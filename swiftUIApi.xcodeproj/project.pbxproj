@@ -25,6 +25,7 @@
 		17D4732E2C3308D7003F31E3 /* CardViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4732D2C3308D7003F31E3 /* CardViewEntity.swift */; };
 		17D4732F2C3308D7003F31E3 /* CardViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4732D2C3308D7003F31E3 /* CardViewEntity.swift */; };
 		17D473302C3308D7003F31E3 /* CardViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D4732D2C3308D7003F31E3 /* CardViewEntity.swift */; };
+		17D473332C331BEF003F31E3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 17D473322C331BEF003F31E3 /* Localizable.xcstrings */; };
 		17EA634B2C1CA86300F181E6 /* swiftUIApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA634A2C1CA86300F181E6 /* swiftUIApiApp.swift */; };
 		17EA634D2C1CA86300F181E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA634C2C1CA86300F181E6 /* ContentView.swift */; };
 		17EA634F2C1CA86500F181E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EA634E2C1CA86500F181E6 /* Assets.xcassets */; };
@@ -45,8 +46,6 @@
 		3BB1246D43E25A1EAB08768A /* Pods_swiftUIApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185ED0D5E66E380629C62A9A /* Pods_swiftUIApi.framework */; };
 		54BD999788BA0B5CC40F5390 /* Pods_swiftUIApiUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7037A3FB1D31E97E3E5A7AEF /* Pods_swiftUIApiUnitTests.framework */; };
 		B0CC097B6D41CE9B496D4709 /* Pods_swiftUIApi_swiftUIApiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F7314F173F33423BA0D8A4 /* Pods_swiftUIApi_swiftUIApiTests.framework */; };
-		F68AAE092C1D054E002DDAD2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA635C2C1CA92000F181E6 /* ApiService.swift */; };
-		F68AAE0A2C1D0569002DDAD2 /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EA63592C1CA8EA00F181E6 /* NetworkErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +73,7 @@
 		17D473252C32EB35003F31E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		17D473292C32EB41003F31E3 /* SavedPostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedPostsView.swift; sourceTree = "<group>"; };
 		17D4732D2C3308D7003F31E3 /* CardViewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewEntity.swift; sourceTree = "<group>"; };
+		17D473322C331BEF003F31E3 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		17EA63472C1CA86300F181E6 /* swiftUIApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftUIApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EA634A2C1CA86300F181E6 /* swiftUIApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftUIApiApp.swift; sourceTree = "<group>"; };
 		17EA634C2C1CA86300F181E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -147,6 +147,14 @@
 			path = components;
 			sourceTree = "<group>";
 		};
+		17D473312C331BDC003F31E3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				17D473322C331BEF003F31E3 /* Localizable.xcstrings */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		17EA633E2C1CA86300F181E6 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +180,7 @@
 		17EA63492C1CA86300F181E6 /* swiftUIApi */ = {
 			isa = PBXGroup;
 			children = (
+				17D473312C331BDC003F31E3 /* resources */,
 				17D4731E2C32DD2C003F31E3 /* components */,
 				17EA63612C1CAD0B00F181E6 /* viewModel */,
 				17EA635E2C1CABF400F181E6 /* models */,
@@ -370,6 +379,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 17EA633E2C1CA86300F181E6;
 			productRefGroup = 17EA63482C1CA86300F181E6 /* Products */;
@@ -390,6 +400,7 @@
 			files = (
 				17EA63522C1CA86500F181E6 /* Preview Assets.xcassets in Resources */,
 				17EA634F2C1CA86500F181E6 /* Assets.xcassets in Resources */,
+				17D473332C331BEF003F31E3 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
