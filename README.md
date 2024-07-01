@@ -2,9 +2,10 @@
 
 <h3> Prints bellow</h3>
 
-<img src="https://imgur.com/a/print1-9VYNlnU" width="50%" /> 
-<img src="https://imgur.com/a/81MK9bT" width="50%" /> 
-<img src="https://imgur.com/a/aCeNR9J" width="50%" /> 
-<img src="https://imgur.com/a/BqrR7Nx" width="50%" /> 
+
+![Imgur](https://i.imgur.com/GiA2i6A.png)
+![Imgur](https://i.imgur.com/k475fzk.png)
+![Imgur](https://i.imgur.com/zsKDaif.png)
+![Imgur](https://i.imgur.com/1RNqDab.png)
 
 
