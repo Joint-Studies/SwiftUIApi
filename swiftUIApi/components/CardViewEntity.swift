@@ -17,9 +17,9 @@ struct CardViewEntity : View {
                 .padding()
                 .overlay(Circle().stroke(.blue))
             VStack(
-                alignment: .leading,
-                content: {
-                    Text(post.title ?? "")
+                alignment: .leading)
+            {
+                Text(post.title ?? "")
                     .bold()
                     .lineLimit(1)
                 
@@ -27,7 +27,15 @@ struct CardViewEntity : View {
                     .font(.caption)
                     .foregroundColor(.secondary)
                     .lineLimit(2)
-            })
+            }
+            Spacer()
+            VStack{
+                Image(systemName: "chevron.right")
+                    .font(.caption)
+                    .foregroundColor(.blue)
+                Text("Swipe")
+                    .font(.caption)
+            }
         }
     }
 }

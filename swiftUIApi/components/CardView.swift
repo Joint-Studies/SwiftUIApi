@@ -29,6 +29,14 @@ struct CardView : View {
                     .foregroundColor(.secondary)
                     .lineLimit(2)
             })
+            Spacer()
+            VStack{
+                Image(systemName: "chevron.right")
+                     .font(.caption)
+                     .foregroundColor(.blue)
+                Text("Swipe")
+                    .font(.caption)
+            }
         }
         .swipeActions(edge: .trailing, allowsFullSwipe: false){
             Button {
@@ -40,4 +48,3 @@ struct CardView : View {
         }
     }
 }
-
